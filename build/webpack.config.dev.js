@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
+module.exports = require('./webpack.config.base')({
   devtool: 'cheap-eval-source-map',
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
@@ -11,7 +11,7 @@ module.exports = {
   ],
   output: {
     path: path.join(process.cwd(), 'dist'),
-    filename: 'site.js'
+    filename: 'bundle.js'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -20,14 +20,8 @@ module.exports = {
       template: 'src/index.html'
     })
   ],
-  module: {
-    loaders: [{
-      test: /\.css$/,
-      loaders: ['style', 'css']
-    }]
-  },
   devServer: {
     contentBase: './dist',
     hot: true
   }
-}
+})
