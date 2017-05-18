@@ -21,7 +21,7 @@ module.exports = options => ({
       loader: 'json-loader'
     }, {
       test: /\.(eot|ttf|woff|woff2|otf)$/,
-      loader: 'file?name=assets/fonts/[name].[ext]'
+      loader: 'file-loader?name=assets/fonts/[name].[ext]'
     }],
     noParse: [/moment.js/]
   },

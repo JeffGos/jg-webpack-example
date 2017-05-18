@@ -6,6 +6,7 @@ require('./css/header.css')
 require('./css/images.css')
 
 //IMAGES
+import 'file-loader?name=[name].[ext]!./assets/images/fav-icon.png'
 
 //JS
 require('./js/site.js')
