@@ -1,0 +1,16 @@
+#site-header {
+    width: 100%
+}
+
+#site-header .header-inner {
+    background-color: white;
+    border-bottom: 2px solid silver;
+}
+
+#site-header .wrapper {
+    padding: 0 40px
+}
+
+.header-title {
+    color: black;
+}

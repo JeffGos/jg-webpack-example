@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "racingsans";
+    src: url("../fonts/RacingSansOne-Regular.ttf") format('ttf');
+}
+
+.font-racing-sans {
+    font-family: racingsans;
+}
