@@ -9,7 +9,8 @@ module.exports = require('./webpack.config.base')({
 
   output: {
     filename: '[name].[chunkhash].js',
-    publicPath: '/'
+    publicPath: '/',
+    path: path.join(process.cwd(), 'dist'),
   },
 
   devtool: 'source-map',

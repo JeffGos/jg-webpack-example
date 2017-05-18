@@ -5,8 +5,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = options => ({
   context: process.cwd(),
   entry: options.entry,
-  output: Object.assign({ // Compile into js/build.js
-    path: path.resolve(process.cwd(), 'build'),
+  output: Object.assign({ 
+    path: path.resolve(process.cwd(), 'dist'),
     sourceMapFilename: '[name].js.map'
   }, options.output),
   module: {
