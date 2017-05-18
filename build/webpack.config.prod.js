@@ -3,14 +3,18 @@ var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = require('./webpack.config.base')({
-  devtool: 'source-map',
   entry: [ 
-    path.join(process.cwd(), 'src/js/app.js')
+    path.join(process.cwd(), 'src/app.js')
   ],
+
   output: {
-    path: path.join(process.cwd(), 'dist'),
-    filename: 'bundle.js'
+    filename: '[name].[chunkhash].js',
+    publicPath: '/'
   },
+
+  devtool: 'source-map',
+  stats: true,
+
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       compressor: {

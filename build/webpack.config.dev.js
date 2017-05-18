@@ -3,11 +3,10 @@ var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = require('./webpack.config.base')({
-  devtool: 'cheap-eval-source-map',
+  devtool: 'inline-source-map',
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
-    'webpack/hot/dev-server',
-    'src/js/app/js'
+    'webpack/hot/only-dev-server',
+    path.join(process.cwd(), 'src/app.js')
   ],
   output: {
     path: path.join(process.cwd(), 'dist'),
@@ -19,9 +18,5 @@ module.exports = require('./webpack.config.base')({
       title: 'Webpack 2.5.1 Example',
       template: 'src/index.html'
     })
-  ],
-  devServer: {
-    contentBase: './dist',
-    hot: true
-  }
+  ]
 })
