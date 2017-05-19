@@ -3,21 +3,21 @@ An example webpack 2.5 project with js, html, css, fonts and images
 
 A simple, clean working example of using webpack. Useful for beginners to get their webpack projects off the ground.
 
-##Installation
+## Installation
 
 Install Node and npm
 
-> npm install
+`npm install`
 
-##Run in dev mode
+## Run in dev mode
 
- > npm run dev
+`npm run dev` 
 
 Visit http://localhost:8080 to view
 
-##Run production build
+## Run production build
 
-> npm run build
+`npm run build`
 
 Prod mode will minify and package the project and output it to the dist directory
 
