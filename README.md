@@ -13,7 +13,7 @@ Install Node and npm
 
 ## Run dev server
 
-`npm start` 
+`npm run start` 
 
 Visit http://localhost:8080 to view
 

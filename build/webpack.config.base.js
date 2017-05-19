@@ -13,7 +13,7 @@ module.exports = options => ({
   module: {
     loaders: [{
       test: /\.css$/,
-      loaders: ['style-loader', 'css-loader']
+      loaders: ExtractTextPlugin.extract({ fallback: 'style-loader', use: 'css-loader' })
     }, {
       test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.swf$/i,
       loader: 'url-loader?limit=1' //don't inline any images - use direct URLs
