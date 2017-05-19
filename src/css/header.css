@@ -1,6 +1,3 @@
-#site-header {
-    width: 100%
-}
 
 #site-header .header-inner {
     background-color: white;
@@ -8,7 +5,8 @@
 }
 
 #site-header .wrapper {
-    padding: 0 40px
+    padding: 15px 40px;
+    margin: 0 auto;
 }
 
 .header-title {

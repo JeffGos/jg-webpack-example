@@ -2,10 +2,6 @@ html {
     width: 100%
 }
 
-.site-sticky {
-    position: fixed;
-}
-
 body {
     font-size: 16px;
     font-family: racingsans;
@@ -52,4 +48,47 @@ h2 {
 
 h3 {
     font-size: 24px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.nav-default li {
+    float: left;
+    margin-right: 5px;
+}
+
+#site-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+section {
+    background-color: lightgray;
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;    
+}
+
+/* Fix for html minifying removing input[type=text] from tag */
+.data-form .text-input {
+    padding: 10px;
+    padding-left: 34px;
+    height: 40px;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #e1e1df;
 }

@@ -1,0 +1,15 @@
+#site-container.site-sticky #site-header.fixed {
+    position: fixed;
+}
+
+.section-header {
+    position: relative;
+    padding-top:50px;
+    padding-bottom:20px;
+}
+
+.section-header h1, .section-header h2 {
+    letter-spacing: 2px;
+    font-weight: 600
+}
+

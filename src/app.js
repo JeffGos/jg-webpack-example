@@ -6,6 +6,7 @@ require('font-awesome/css/font-awesome.css');
 require('bootstrap/dist/css/bootstrap.css');
 
 require('./css/common.css');
+require('./css/content.css');
 require('./css/fonts.css');
 require('./css/footer.css');
 require('./css/header.css');
