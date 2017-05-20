@@ -18,9 +18,6 @@ module.exports = options => ({
       test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.swf$/i,
       loader: 'url-loader?limit=1' //don't inline any images - use direct URLs
     }, {
-      test: /\.json$/,
-      loader: 'json-loader'
-    }, {
       test: /\.(eot|ttf|woff|woff2|otf)$/,
       loader: 'file-loader?name=assets/fonts/[name].[ext]'
     }],
