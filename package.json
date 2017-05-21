@@ -1,11 +1,11 @@
 {
   "name": "jg-webpack-example",
   "version": "1.0.0",
-  "description": "IMT Web",
+  "description": "Webpack example",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.prod.js -p",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.dev.js --watch -d"
+    "build": "cross-env NODE_ENV=production webpack --config bld/webpack.config.prod.js -p",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config bld/webpack.config.dev.js --watch -d"
   },
   "repository": {
     "type": "git",
